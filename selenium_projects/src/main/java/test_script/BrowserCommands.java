@@ -16,6 +16,6 @@ public static void main(String args[])
 	BrowserCommands browsercommands=new BrowserCommands();
 	browsercommands.initializerBrowser();
 	browsercommands.browsercommands();
-	//browsercommands.driverquitandclose();
+	browsercommands.driverquitandclose();
 }
 }
