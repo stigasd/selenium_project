@@ -20,6 +20,8 @@ public class Locators extends Base {
 		WebElement class1=driver.findElement(By.className("mb-sec"));
 		WebElement class2=driver.findElement(By.className("col-lg-3 col-md-3 col-sm-12 col-xs-12"));
 		WebElement class3=driver.findElement(By.className("col-lg-9 col-md-9 col-sm-12 col-xs-12"));
+		WebElement class4=driver.findElement(By.className("btn btn-primary"));
+		
 		//WebElement class1=driver.findElement(By.className(""));
 	}
 	public void name()
