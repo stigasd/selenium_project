@@ -23,15 +23,16 @@ public class Cs_selectors extends Base {
 	public void tagandattribute()
 	{
 		//syntax: tag[attribute=value]
-		WebElement tagandattri1=driver.findElement(By.cssSelector("button[id=\'button-one\']"));
-		WebElement tagandattri2=driver.findElement(By.cssSelector("button[id=\'button-two\']"));
-		WebElement tagandattri3=driver.findElement(By.cssSelector("select.[id=\'single-input-field\']"));
+		WebElement tagandattri1=driver.findElement(By.cssSelector("button[id='button-one']"));
+		//any attribute can be taken but id edukumbo kore unique aait kittum
+		WebElement tagandattri2=driver.findElement(By.cssSelector("button[id='button-two']"));
+		WebElement tagandattri3=driver.findElement(By.cssSelector("select.[id='single-input-field']"));
 	}
 	public void tagclassandattribute()
 	{
 		//syntax: tag.classname[attribute=value]
 		WebElement tagcal1=driver.findElement(By.cssSelector("input.form-control[id='subject']"));
-		WebElement tagcal2=driver.findElement(By.cssSelector("input.form-control[id='subject']"));
+		WebElement tagcal2=driver.findElement(By.cssSelector("textarea.form-control[id='description']"));
 	}
 	public static void main(String args[])
 	{

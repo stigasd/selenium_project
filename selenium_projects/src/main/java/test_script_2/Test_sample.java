@@ -1,0 +1,43 @@
+package test_script_2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+
+import test_script.Base;
+
+public class Test_sample extends Base {
+	public void sample()
+	{   try {
+		
+		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
+		WebElement input=driver.findElement(By.id("single-input-field"));
+		input.sendKeys("Hello");
+		WebElement show=driver.findElement(By.id("button-one"));
+		show.click();
+		WebElement id1= driver.findElement(By.id("value-a"));
+		id1.sendKeys("10");
+		WebElement id2= driver.findElement(By.id("value-b"));
+		id2.sendKeys("4");
+		WebElement id3= driver.findElement(By.id("button-two"));
+		id3.click();
+	}catch(Exception e)
+	{
+		System.out.println("Error program interupted "+e.getMessage());
+	}finally
+	{
+		System.out.println("end of the program");
+	}
+	
+	}
+	
+	
+	public static void main(String args[])
+	{
+Test_sample obj1 =new Test_sample();
+obj1.initializerBrowser();
+obj1.sample();
+//obj1.driverquitandclose();
+	
+	}
+}
