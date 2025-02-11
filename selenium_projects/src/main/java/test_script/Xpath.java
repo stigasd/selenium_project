@@ -43,7 +43,7 @@ public class Xpath extends Base {
 	}
 	public void or()
 	{
-		//tag[@attribute='value'
+		 //tag[@attribute='value' or @attribute='value']
 		
 		WebElement or1=driver.findElement(By.xpath("//input[@class='btn btn-primary' or  @type='submit']"));
 		WebElement or2=driver.findElement(By.xpath("//input[@id='subject' or  @class='form-control']"));
@@ -54,7 +54,7 @@ public class Xpath extends Base {
 	}
 	public void and()
 	{
-		//tag[@attribute='value'
+		//tag[@attribute='value' and @attribute='value']
 		
 		WebElement and1=driver.findElement(By.xpath("//button[@id='downloadButton'  and  @class='ui-button ui-corner-all ui-widget']"));
 		WebElement and2=driver.findElement(By.xpath("//button[@id='button-one'  and   @class='btn btn-primary']"));
